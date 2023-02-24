@@ -6,6 +6,5 @@ import { prisma } from "./prisma";
 // find the critic with the lowest average score
 export const findTheGrumpiestCriticId = async () => {};
 
-// find the critic with the lowest average score
-
+// find the critic with the highest average score
 export const findTheNicestCriticId = async () => {};
