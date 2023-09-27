@@ -19,8 +19,6 @@ const _averageBy = <T>(arr: T[], fn: (x: T) => number) =>
 export function averageBy<T>(arr: T[], fn: (x: T) => number): number;
 export function averageBy<T>(fn: (x: T) => number): (arr: T[]) => number;
 export function averageBy(...args: any[]) {
-  console.log("fuck");
-  console.log({ args });
   // eslint-disable-next-line prefer-rest-params
   return purry(_averageBy, args);
 }
