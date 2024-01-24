@@ -6,4 +6,9 @@ export const createUserWithData = async ({
 }: {
   username: string;
   age: number;
-}) => {};
+}) => {
+  return prisma.$queryRaw`
+    insert into User (username, age)
+    values (${username}, ${age});
+    `;
+};

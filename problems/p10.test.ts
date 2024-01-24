@@ -30,6 +30,7 @@ describe("p10", () => {
     );
 
     await deleteAllUsersWithAgeUnderN(20);
+
     const usersAfterMutation = pipe(
       await prisma.user.findMany({}),
       sortBy((user) => user.age)
